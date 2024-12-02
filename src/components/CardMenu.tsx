@@ -13,19 +13,16 @@ export const CardMenu: React.FC<CardMenuProps> = ({
   content,
 }) => {
   return (
-    <div className="rounded-xl overflow-hidden w-48 border bg-white flex flex-col">
-      {/* Gambar dengan tinggi tetap */}
+    <div className="rounded-xl overflow-hidden w-48 border bg-white flex flex-col cursor-pointer hover:scale-[98%] transition-transform duration-500 ease-in-out">
       {imageUrl ? (
         <Image alt="image-card" src={imageUrl} width={500} height={500} />
       ) : (
         <div className="w-48 h-48 bg-red-500"></div>
       )}
-      {/* Kontainer dengan flex untuk pengaturan posisi */}
       <div className="p-4 flex flex-col justify-between flex-1">
         <h2 className="text-lg font-bold tracking-tight leading-5 text-gray-900">
           {name}
         </h2>
-        {/* Konten diposisikan di bawah */}
         <p className="text-sm mt-2 text-gray-600 self-end">{content} cabang</p>
       </div>
     </div>

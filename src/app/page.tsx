@@ -65,7 +65,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="p-4">
+    <div className="py-8">
       <div className="relative text-center w-fit m-auto ">
         <span
           className="absolute right-2 top-4 text-2xl rotate-12"
@@ -81,7 +81,7 @@ export default function Home() {
         </span>
 
         {/* Judul Utama */}
-        <h1 className="text-4xl font-bold mb-6 py-4 tracking-tight">
+        <h1 className="text-4xl font-bold mb-6 tracking-tight">
           <span className="block">Cabang</span>
           <span className="block">Ilmu Komputer</span>
         </h1>

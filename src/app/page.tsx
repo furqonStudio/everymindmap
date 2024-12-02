@@ -24,7 +24,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="flex flex-wrap gap-4 mx-28 justify-center">
+      <div className="flex flex-wrap gap-4 md:mx-12 lg:mx-40 justify-center">
         {branches.map((branch) => (
           <CardMenu
             key={branch.id}

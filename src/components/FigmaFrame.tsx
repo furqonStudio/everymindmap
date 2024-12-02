@@ -1,4 +1,8 @@
-export default function FigmaFrame() {
+type FigmaFrameProps = {
+  src: string
+}
+
+const FigmaFrame: React.FC<FigmaFrameProps> = ({ src }) => {
   return (
     <div
       style={{
@@ -15,9 +19,11 @@ export default function FigmaFrame() {
           width: '100%',
           height: '100%',
         }}
-        src="https://embed.figma.com/board/zDiHjqwdQcd4VO4nS0VWvv/Rekayasa-Perangkat-Lunak?node-id=0-1&embed-host=share"
+        src={src}
         allowFullScreen
       ></iframe>
     </div>
   )
 }
+
+export default FigmaFrame

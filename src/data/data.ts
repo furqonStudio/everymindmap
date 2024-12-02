@@ -3,6 +3,8 @@ export const branches = [
     id: 1,
     imageUrl: '/teori-komputer.webp',
     href: '/detail/teori-komputer',
+    figmaUrl:
+      'https://embed.figma.com/board/gBXHlze0xo8wKq7S2C3AxZ/Pengembangan-Web-dan-Mobile?embed-host=share',
     name: 'Teori Komputer',
     content: 8,
   },
@@ -24,6 +26,8 @@ export const branches = [
     id: 4,
     imageUrl: '/kecerdasan-buatan.webp',
     href: '/detail/kecerdasan-buatan',
+    figmaUrl:
+      'https://embed.figma.com/board/bRyLoJfjbC9FSrbmYJHT1t/AI-Mindmap?embed-host=share',
     name: 'Kecerdasan Buatan (AI)',
     content: 8,
   },
@@ -31,6 +35,8 @@ export const branches = [
     id: 5,
     imageUrl: '/rekayasa-perangkat-lunak.webp',
     href: '/detail/rekayasa-perangkat-lunak',
+    figmaUrl:
+      'https://embed.figma.com/board/zDiHjqwdQcd4VO4nS0VWvv/Rekayasa-Perangkat-Lunak?embed-host=share',
     name: 'Rekayasa Perangkat Lunak',
     content: 8,
   },
@@ -66,6 +72,8 @@ export const branches = [
     id: 10,
     imageUrl: '/pengembangan-web-dan-mobile.webp',
     href: '/detail/pengembangan-web-dan-mobile',
+    figmaUrl:
+      'https://embed.figma.com/board/gBXHlze0xo8wKq7S2C3AxZ/Pengembangan-Web-dan-Mobile?embed-host=share',
     name: 'Pengembangan Web dan Mobile',
     content: 8,
   },

@@ -1,19 +1,25 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type CardMenuProps = {
   imageUrl?: string // Optional imageUrl, since it's not mandatory
   name: string
   content: number
+  href: string // Add href to specify the link destination
 }
 
 export const CardMenu: React.FC<CardMenuProps> = ({
   imageUrl,
   name,
   content,
+  href,
 }) => {
   return (
-    <div className="rounded-xl overflow-hidden w-48 border bg-white flex flex-col cursor-pointer hover:scale-[98%] transition-transform duration-500 ease-in-out">
+    <Link
+      href={href}
+      className="rounded-xl overflow-hidden w-48 border bg-white flex flex-col cursor-pointer hover:scale-[98%] transition-transform duration-500 ease-in-out"
+    >
       {imageUrl ? (
         <Image alt="image-card" src={imageUrl} width={500} height={500} />
       ) : (
@@ -25,6 +31,6 @@ export const CardMenu: React.FC<CardMenuProps> = ({
         </h2>
         <p className="text-sm mt-2 text-gray-600 self-end">{content} cabang</p>
       </div>
-    </div>
+    </Link>
   )
 }
